@@ -6,11 +6,13 @@
  * comments to the end of this file.
  */
 
-var list1 = ['red','blue','green'];
-var list2 = ['orange','banana','grape'];
-
-const combinedList = [];
-list1.forEach(l => combinedList.push(l));
-list2.forEach(l => combinedList.push(l));
-
-console.log(combinedList);
+ var list1 = ['red','blue','green'];
+ var list2 = ['orange','banana','grape'];
+ 
+ const combinedList = [...list1, ...list2];
+ 
+ console.log(combinedList);
+ 
+ /**
+  * We can combine the lists in one line of code using the spread syntax.
+  */

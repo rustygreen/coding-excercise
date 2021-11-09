@@ -4,11 +4,9 @@
  * processes as comments
  */
 
-const colors = ['#123', '#456', '#678'];
-
-
-const red = colors[0];
-const blue = colors[1];
-const green = colors[3];
-
-console.log(`${red}, ${blue}, ${green}`);
+ const [red, blue, green] = ['#123', '#456', '#678'];
+ console.log(`${red}, ${blue}, ${green}`);
+ 
+ /**
+  * Destructuring the array in one line makes the code more concise and hopefully easier to read.
+  */

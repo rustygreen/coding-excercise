@@ -7,16 +7,20 @@
 /**
  * A generic data store class that provides general CRUD operations.
  */
-export abstract class DataStore {
-  queryAll(): Observable<any[]> {
+ export abstract class DataStore<T> {
+  queryAll(): Observable<T[]> {
     // <NO CODE NEEDED>
   }
 
-  getById(id: any): Observable<any> {
+  getById(id: any): Observable<T> {
     // <NO CODE NEEDED>
   }
 
-  save(item: any): Observable<string> {
+  save(item: T): Observable<string> {
     // <NO CODE NEEDED>
   }
 }
+
+/**
+ * Using generics allows for flexibility in the types of data we're handling with our CRUD operations, while still taking advantage of TypeScript's typing.
+ */
